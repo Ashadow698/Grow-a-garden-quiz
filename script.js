@@ -1,33 +1,94 @@
 const allQuestions = [
-  // Add the full 200-question set here
   {
-    question: "What do plants need to grow?",
+    question: "What is the first tool you unlock in Grow a Garden?",
     answers: {
-      a: "Sunlight, water, and soil",
-      b: "Soda, glue, and air",
-      c: "TV, books, and oil"
+      a: "Watering Can",
+      b: "Spade",
+      c: "Hoe"
     },
     correctAnswer: "a"
   },
   {
-    question: "What part of the plant absorbs water?",
+    question: "What do you need to plant a Golden Sunflower?",
     answers: {
-      a: "Stem",
-      b: "Leaves",
-      c: "Roots"
+      a: "100 coins",
+      b: "Golden Seed",
+      c: "Rare Soil"
+    },
+    correctAnswer: "b"
+  },
+  {
+    question: "Which pet boosts your plant growth speed?",
+    answers: {
+      a: "Sprout Cat",
+      b: "Bloom Bunny",
+      c: "Soil Dog"
+    },
+    correctAnswer: "b"
+  },
+  {
+    question: "What happens when you overwater a plant in Grow a Garden?",
+    answers: {
+      a: "It grows faster",
+      b: "It turns purple",
+      c: "It wilts"
     },
     correctAnswer: "c"
   },
   {
-    question: "Which vegetable grows underground?",
+    question: "Which fertilizer gives the best XP bonus?",
     answers: {
-      a: "Carrot",
-      b: "Lettuce",
-      c: "Tomato"
+      a: "Basic Fertilizer",
+      b: "Super Grow",
+      c: "Mega Bloom"
+    },
+    correctAnswer: "c"
+  },
+  {
+    question: "How do you unlock the Desert Garden zone?",
+    answers: {
+      a: "Collect 5 cactus seeds",
+      b: "Reach level 10",
+      c: "Defeat the Sandstorm Boss"
+    },
+    correctAnswer: "b"
+  },
+  {
+    question: "Which flower is the rarest in Grow a Garden?",
+    answers: {
+      a: "Rainbow Rose",
+      b: "Blue Tulip",
+      c: "Fire Lily"
     },
     correctAnswer: "a"
   },
-  // ... Add up to 200 questions like these
+  {
+    question: "What can you craft using nectar in the game?",
+    answers: {
+      a: "Flower Potion",
+      b: "Bee Attractor",
+      c: "Sticky Honey Trap"
+    },
+    correctAnswer: "b"
+  },
+  {
+    question: "What does the Garden Gnome do?",
+    answers: {
+      a: "Decorates your garden",
+      b: "Scares away pests",
+      c: "Increases XP"
+    },
+    correctAnswer: "b"
+  },
+  {
+    question: "What currency is used to buy rare seeds?",
+    answers: {
+      a: "Coins",
+      b: "Petals",
+      c: "Gems"
+    },
+    correctAnswer: "c"
+  }
 ];
 
 function getRandomQuestions(arr, n) {
@@ -85,3 +146,4 @@ function showResults() {
 document.getElementById("submit").addEventListener("click", showResults);
 
 buildQuiz();
+
